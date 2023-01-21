@@ -52,7 +52,7 @@ function AuthSection(props) {
   return (
     <section className="py-12 px-4">
       <div className="container mx-auto max-w-sm text-center">
-        <h1 className="mb-6 text-3xl font-medium">{options.title}</h1>
+        <h1 className="mb-6 text-3xl font-extrabold">{options.title}</h1>
         <Auth
           type={type}
           buttonAction={options.buttonAction}

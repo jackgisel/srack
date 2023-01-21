@@ -65,9 +65,9 @@ function AuthForm(props) {
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       {["signup", "signin", "forgotpass"].includes(props.type) && (
-        <div className="mb-2">
+        <div className="mb-3">
           <input
-            className="py-1 px-3 w-full leading-8 bg-white rounded border border-gray-300 outline-none focus:border-blue-500 focus:ring-1"
+            className="placeholder-black py-1 px-3 w-full leading-8 bg-white border-2 border-black outline-none "
             name="email"
             type="email"
             placeholder="Email"
@@ -85,9 +85,9 @@ function AuthForm(props) {
       )}
 
       {["signup", "signin", "changepass"].includes(props.type) && (
-        <div className="mb-2">
+        <div className="mb-3">
           <input
-            className="py-1 px-3 w-full leading-8 bg-white rounded border border-gray-300 outline-none focus:border-blue-500 focus:ring-1"
+            className="placeholder-black py-1 px-3 w-full leading-8 bg-white border-2 border-black outline-none focus:ring-0"
             name="pass"
             type="password"
             placeholder="Password"
@@ -105,9 +105,9 @@ function AuthForm(props) {
       )}
 
       {["signup", "changepass"].includes(props.type) && (
-        <div className="mb-2">
+        <div className="mb-3">
           <input
-            className="py-1 px-3 w-full leading-8 bg-white rounded border border-gray-300 outline-none focus:border-blue-500 focus:ring-1"
+            className="placeholder-black py-1 px-3 w-full leading-8 bg-white border-2 border-black outline-none focus:border-gray-300 focus:ring-1"
             name="confirmPass"
             type="password"
             placeholder="Confirm Password"
@@ -132,7 +132,7 @@ function AuthForm(props) {
       )}
 
       <button
-        className="py-2 px-4 w-full text-white bg-blue-500 rounded border-0 hover:bg-blue-600 focus:outline-none"
+        className="text-black font-extrabold py-2 px-4 w-full bg-blue-400 border-2 border-black hover:bg-blue-600 focus:outline-none"
         type="submit"
         disabled={pending}
       >
